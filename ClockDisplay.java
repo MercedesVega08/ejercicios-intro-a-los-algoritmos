@@ -83,8 +83,10 @@ public class ClockDisplay
             displayString = hours.getDisplayValue() + ":" + 
                         minutes.getDisplayValue() + "am";   
         } else{
-            if(horas==0){
-                horas=11;
+            if(horas==24){
+                
+                displayString=hours.getDisplayValue() + ":" + 
+                            minutes.getDisplayValue() + "am";
             } else{
                 displayString = hours.getDisplayValue() + ":" + 
                         minutes.getDisplayValue() + "pm";
